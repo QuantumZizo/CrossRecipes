@@ -1,0 +1,21 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "create:mixing",
+	"ingredients": [
+		{"tag": "forge:milk"},
+		{"item": "minecraft:glow_berries"},
+		{"item": "minecraft:egg"},
+		{"item": "minecraft:sugar"}
+	],
+	"results": [
+		{
+			"item": "farmersdelight:glow_berry_custard"
+		}
+	],
+	"heatRequirement": "heated"
+}

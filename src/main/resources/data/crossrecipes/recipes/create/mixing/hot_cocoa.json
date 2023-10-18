@@ -1,0 +1,21 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "create:mixing",
+	"ingredients": [
+		{"tag": "forge:milk"},
+		{"item": "minecraft:sugar"},
+		{"item": "minecraft:cocoa_beans"},
+		{"item": "minecraft:cocoa_beans"}
+	],
+	"results": [
+		{
+			"item": "farmersdelight:hot_cocoa"
+		}
+	],
+	"heatRequirement": "heated"
+}
