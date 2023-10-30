@@ -4,6 +4,8 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 import com.quantumzizo.crossrecipes.crafting.conditions.CreatePortsEnabledCondition;
+import com.quantumzizo.crossrecipes.crafting.conditions.InconsistentPortsEnabledCondition;
+import com.quantumzizo.crossrecipes.crafting.conditions.MekanismPortsEnabledCondition;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.crafting.CraftingHelper;
@@ -31,7 +33,9 @@ public class CrossRecipes {
 	}
 	
 	private void commonSetup(final FMLCommonSetupEvent event) {
+		CraftingHelper.register(new InconsistentPortsEnabledCondition.Serializer());
 		CraftingHelper.register(new CreatePortsEnabledCondition.Serializer());
+		CraftingHelper.register(new MekanismPortsEnabledCondition.Serializer());
 		
 		LOGGER.info("Yall thankful I was the one making these recipes.");
 	}

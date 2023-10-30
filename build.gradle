@@ -153,6 +153,8 @@ dependencies {
 	runtimeOnly fg.deobf("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
 	runtimeOnly fg.deobf("com.jozufozu.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}")
 	runtimeOnly fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
+	// Mekanism
+	runtimeOnly fg.deobf("curse.maven:mekanism-268560:${mekanism_version}")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
