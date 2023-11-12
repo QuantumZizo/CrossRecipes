@@ -18,7 +18,8 @@ public class Config {
 	static {
 		BUILDER.comment("Settings that impact the balancing of the recipes ported.").push(CATEGORY_BALANCING);
 		ENABLE_INCONSISTENT_PORTS = BUILDER.comment("Allows ported recipes that aren't exactly the same as the original to be loaded. "
-				+ "E.g. A recipe that has a chance factor being stripped of that randomization in the porting process.")
+				+ "E.g. A recipe that has a chance factor being stripped of that randomization in the porting process, "
+				+ "or a ported recipe using a different machine because there are no replicas of the original in the mod its ported to.")
 				.define("enableInconsistentPorts", true);
 		BUILDER.pop();
 		

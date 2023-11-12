@@ -135,6 +135,14 @@ repositories {
 		name = "tterrag's maven"
 		url = 'https://maven.tterrag.com/'
 	}
+	maven {
+		url = 'https://modmaven.dev/'
+	}
+	// Terrarium's and Team Resourceful's Repo
+	maven {
+		name = "Resourceful Bees Maven"
+		url = "https://maven.resourcefulbees.com/repository/maven-public/"
+	}
 }
 
 dependencies {
@@ -154,7 +162,10 @@ dependencies {
 	runtimeOnly fg.deobf("com.jozufozu.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}")
 	runtimeOnly fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 	// Mekanism
-	runtimeOnly fg.deobf("curse.maven:mekanism-268560:${mekanism_version}")
+	runtimeOnly fg.deobf("mekanism:Mekanism:${minecraft_version}-${mekanism_version}")
+	runtimeOnly fg.deobf("mekanism:Mekanism:${minecraft_version}-${mekanism_version}:additions")
+	runtimeOnly fg.deobf("mekanism:Mekanism:${minecraft_version}-${mekanism_version}:generators")
+	runtimeOnly fg.deobf("mekanism:Mekanism:${minecraft_version}-${mekanism_version}:tools")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
